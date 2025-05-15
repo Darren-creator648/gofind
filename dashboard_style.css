@@ -1,0 +1,134 @@
+/* ✅ Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ✅ Corps général */
+  .dashboard-body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00bfff, #007acc);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  /* ✅ Sidebar gauche */
+  .sidebar {
+    width: 200px;
+    background: rgba(0, 0, 0, 0.3);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 20px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+  }
+  
+  .sidebar a.active {
+    color: #ffd700;
+    font-weight: bold;
+  }
+  
+  /* ✅ Le reste du contenu prend la place à droite */
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* ✅ Header */
+  .header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-text {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .logo {
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ✅ Section images */
+  .main-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* ✅ Textes dynamiques */
+  .texts {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .notif {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .notif:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: #000;
+  }
+  

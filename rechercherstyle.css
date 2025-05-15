@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header .logo {
+    height: 40px;
+    margin: 0 10px;
+  }
+  
+  .header-text {
+    font-size: 20px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+    padding: 10px;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav a.active {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .div {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .formTrajet {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .trajet {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+  }
+  
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .bottom-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .bottom-nav a.active {
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
